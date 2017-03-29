@@ -1,0 +1,6 @@
+<h2>Har ordet {{word}} jämnt antal tecken?</h2>
+<my-spelling-indicator [spellingStateObservable]="spellState"></my-spelling-indicator>
+<div>
+  <label>Ord att stava:</label>
+  <input #wordBox id="word-box" [(ngModel)]="word" placeholder="Skriv ord att stava" (keyup)="checkSpelling(wordBox.value)" />
+</div>
